@@ -1,4 +1,4 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><title>PlayerScore</title><meta name="description" content="PlayerScore · análisis de partidos y jugadores de fútbol"><link rel="icon" href="favicon.svg" type="image/svg+xml"><script src="platform.js"></script><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html><html lang="es"><head><meta charset="utf-8"><title>PlayerScore</title><meta name="description" content="PlayerScore · análisis de partidos y jugadores de fútbol"><link rel="icon" href="favicon.svg" type="image/svg+xml"><script src="config.js"></script><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.112.4/dist/umd/supabase.js"></script><script src="platform.js"></script><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap">
@@ -3230,7 +3230,7 @@ function viewGuia(){
   ${sec("Copias y Excel",ul([
     "<b>Exportar a Excel</b>: partidos, datos del equipo, de cada jugador y todas las acciones de la temporada.",
     "<b>Descargar copia de seguridad</b>: guarda todo (todas las temporadas) en un archivo que se puede volver a cargar con «Importar copia».",
-    "Los datos se guardan solos en este navegador. Para pasarlos a otro dispositivo o navegador, descarga una copia de seguridad e impórtala allí."]))}
+    (window.PlayerScorePlatform&&PlayerScorePlatform.mode==="cloud"?"Los datos se guardan solos en tu cuenta y se ven en cualquier dispositivo donde entres con ella; los cambios llegan en directo a los demás dispositivos abiertos.":"Los datos se guardan solos en este navegador. Para pasarlos a otro dispositivo o navegador, descarga una copia de seguridad e impórtala allí.")]))}
   </div>`;
 }
 /* ---------- rivales ---------- */
