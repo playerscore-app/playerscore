@@ -1,0 +1,9 @@
+{
+  "name": "playerscore",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PlayerScore · análisis de partidos y jugadores de fútbol (web estática, sin servidor)",
+  "scripts": {
+    "start": "npx --yes serve -l 8080 ."
+  }
+}
